@@ -19,7 +19,8 @@ function reverseVowels(s: string): string {
   while (vowelsPos.length > 1) {
     const l = vowelsPos.shift();
     const r = vowelsPos.pop();
-    if (l && r) { // for avoid to warn of @typescript-eslint/no-non-null-assertion
+    if (l && r) {
+      // for avoid to warn of @typescript-eslint/no-non-null-assertion
       const lchar = s[l];
       const rchar = s[r];
       s = replaceAt(s, l, rchar);
