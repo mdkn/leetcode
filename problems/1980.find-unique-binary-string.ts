@@ -6,11 +6,11 @@
 
 // @lc code=start
 function findDifferentBinaryString(nums: string[]): string {
-  let ans = "";
+  let ans = ""
   for (let i = 0; i < nums.length; i++) {
-    const char = nums[i].substring(i, i + 1);
-    ans += char === "1" ? "0" : "1";
+    const char = nums[i].substring(i, i + 1)
+    ans += char === "1" ? "0" : "1"
   }
-  return ans;
+  return ans
 }
 // @lc code=end

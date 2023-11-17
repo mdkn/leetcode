@@ -6,14 +6,14 @@
 
 // @lc code=start
 function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
-  let maxValue = 0;
+  let maxValue = 0
   for (let i = 0; i < candies.length; i++) {
-    maxValue = Math.max(maxValue, candies[i]);
+    maxValue = Math.max(maxValue, candies[i])
   }
-  const ans = [];
+  const ans = []
   for (let i = 0; i < candies.length; i++) {
-    ans.push(candies[i] + extraCandies < maxValue ? false : true);
+    ans.push(candies[i] + extraCandies < maxValue ? false : true)
   }
-  return ans;
+  return ans
 }
 // @lc code=end

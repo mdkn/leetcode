@@ -19,24 +19,24 @@ function canPlaceFlowers(flowerbed: number[], n: number): boolean {
   // 7 -> 3
 
   const countToBePlanted = (n: number) => {
-    return ((n - 1) / 2) | 0;
-  };
+    return ((n - 1) / 2) | 0
+  }
 
-  let canBePlantedCount = 0;
-  let cnt = 0;
+  let canBePlantedCount = 0
+  let cnt = 0
 
-  flowerbed = [0].concat(flowerbed).concat([0]);
+  flowerbed = [0].concat(flowerbed).concat([0])
 
   for (let i = 0; i < flowerbed.length; i++) {
     if (flowerbed[i] === 0) {
-      cnt += 1;
+      cnt += 1
     } else {
-      canBePlantedCount += countToBePlanted(cnt);
-      cnt = 0;
+      canBePlantedCount += countToBePlanted(cnt)
+      cnt = 0
     }
   }
-  canBePlantedCount += countToBePlanted(cnt);
-  return canBePlantedCount >= n;
+  canBePlantedCount += countToBePlanted(cnt)
+  return canBePlantedCount >= n
 
   //   let canBePlantedCount = 0;
   //   for (let i = 0; i < flowerbed.length; i++) {

@@ -7,11 +7,11 @@
 // @lc code=start
 function gcdOfStrings(str1: string, str2: string): string {
   const gcd = (x: number, y: number): number => {
-    return x % y ? gcd(y, x % y) : y;
-  };
+    return x % y ? gcd(y, x % y) : y
+  }
 
-  if (str1 + str2 !== str2 + str1) return "";
+  if (str1 + str2 !== str2 + str1) return ""
 
-  return str1.substring(0, gcd(str1.length, str2.length));
+  return str1.substring(0, gcd(str1.length, str2.length))
 }
 // @lc code=end
